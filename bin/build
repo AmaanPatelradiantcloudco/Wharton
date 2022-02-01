@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -euo pipefail
+
+yarn run lint
+yarn run clean
+yarn run build:browser
+yarn run build:functions

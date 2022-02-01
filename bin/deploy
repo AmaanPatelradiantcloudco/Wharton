@@ -1,0 +1,50 @@
+#!/bin/bash
+
+source .env
+
+# Build typescript source
+echo "Building source and deploying to $GOOGLE_PROJECT_ID project."
+yarn build
+
+# Create yaml file from environment variables
+# to be sent to cloud functions during deploy
+rm .env.yaml
+DIALOGFLOW_LOCATION=$DIALOGFLOW_LOCATION \
+DIALOGFLOW_ENDPOINT=$DIALOGFLOW_ENDPOINT \
+GOOGLE_PROJECT_ID=$GOOGLE_PROJECT_ID \
+envsubst < .env.template.yaml > .env.yaml
+
+# Deploy to cloud functions
+gcloud functions deploy index \
+  --project "$GOOGLE_PROJECT_ID" \
+  --env-vars-file .env.yaml \
+  --runtime nodejs14 --trigger-http --allow-unauthenticated
+
+gcloud functions deploy bundle \
+  --project "$GOOGLE_PROJECT_ID" \
+  --env-vars-file .env.yaml \
+  --runtime nodejs14 --trigger-http --allow-unauthenticated
+
+gcloud functions deploy message \
+  --project "$GOOGLE_PROJECT_ID" \
+  --env-vars-file .env.yaml \
+  --runtime nodejs14 --trigger-http --allow-unauthenticated
+
+gcloud functions deploy conversations \
+  --project "$GOOGLE_PROJECT_ID" \
+  --env-vars-file .env.yaml \
+  --runtime nodejs14 --trigger-http --allow-unauthenticated
+
+gcloud functions deploy parameters \
+  --project "$GOOGLE_PROJECT_ID" \
+  --env-vars-file .env.yaml \
+  --runtime nodejs14 --trigger-http --allow-unauthenticated
+
+# Report url for app entry point
+url=$(gcloud functions describe index \
+  --project "$GOOGLE_PROJECT_ID" \
+  --format="value(httpsTrigger.url)")
+
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+echo -e "${GREEN}Chatbot deployed to $url.${NC}"

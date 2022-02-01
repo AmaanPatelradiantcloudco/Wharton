@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+node_modules/.bin/eslint . --ext ts --fix
+node_modules/.bin/prettier --write src

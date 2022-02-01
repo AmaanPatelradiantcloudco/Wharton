@@ -1,0 +1,9 @@
+dist/
+static/bundle*
+node_modules/
+dev/transcript*
+
+yarn-error.log
+.env
+.env.yaml
+*credentials.json

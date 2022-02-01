@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 4rem;
+        font-size: 2em;
+      }
+
+      .message {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        min-height: 2rem;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: .5rem;
+      }
+
+      .conf {
+        padding-left: 5em;
+        text-align: right;
+        color: rgb(9, 122, 201);
+        font-style: Arial (sans-serif);
+      }
+
+      .participant {
+        padding-right: 5em;
+        text-align: left;
+        color: #000000;
+      }
+
+      .ended {
+        padding-left: 5em;
+        text-align: right;
+        font-size: 1rem;
+        font-style: Arial (sans-serif);
+        color: rgb(122, 122, 122);
+        font-style: italic;
+      }
+
+      .typing-indicator {
+        display:flex;
+        justify-content: end;
+        padding-top: 2.4rem;
+        height: 4.4rem;
+      }
+
+      .typing-indicator .dot_1,
+      .typing-indicator .dot_2,
+      .typing-indicator .dot_3 {
+        width: .2rem;
+        height: .2rem;
+        margin: .2rem;
+        background-color: rgb(9, 122, 201);
+        border-radius: 50%;
+        animation-duration: 2s;
+        animation-name: pulse;
+        animation-iteration-count: infinite;
+      }
+
+      .dot_2 {
+        animation-delay: .33s;
+      }
+
+      .dot_3 {
+        animation-delay: .66s;
+      }
+
+      @keyframes pulse {
+        from {
+          transform: scale(1);
+        }
+
+        25% {
+          transform: scale(1.75);
+        }
+
+        50% {
+          transform: scale(1);
+        }
+
+        to {
+          transform: scale(1);
+        }
+      }
+
+      #form {
+        position: fixed;
+        bottom: 0;
+        padding: 1rem;
+        display: flex;
+        width: 100%;
+      }
+
+      #form #input {
+        font-size: 1.2rem;
+        flex-grow: 1;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: .5rem;
+        border: 2px solid #c5cbce;
+      }
+
+      #form button {
+        font-size: 1.2rem;
+        background-color: rgb(9, 122, 201);
+        color: #ffffff;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: .5rem;
+        height: 3rem;
+        border: 2px solid rgb(9, 122, 201);
+        box-shadow: 0 8px 10px 0 rgba(2,74,121,.14),0 3px 14px 0 rgba(2,74,121,.12),0 4px 5px 0 rgba(2,74,121,.2);
+      }
+
+      #errors {
+        color: #9e4400;
+      }
+
+      #info {
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 10px;
+        max-height: 50%;
+        overflow-y: scroll;
+      }
+
+      #info .param {
+        border: 1px solid #555555;
+        border-width: 0 1px 1px 0;
+        padding: 0.3rem;
+        background-color: rgba(220,220,220, 0.6);
+        color: #080f0f;
+      }
+
+      #info .page {
+        border: 1px solid #555555;
+        border-width: 0 1px 1px 0;
+        padding: 0.3rem;
+        background-color: rgba(255,255,255, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="errors" class="errors"></div>
+    <div id="messages" class="messages"></div>
+    <div id="info" class="info"></div>
+
+    <form id="form" class="form">
+      <input
+        id="input"
+        class="input"
+        type="text"
+        autocomplete="off"
+        autofocus="true"
+      />
+      <button id="submit" type="submit" class="button">Send</button>
+    </form>
+
+    <script src="/bundle"></script>
+  </body>
+</html>

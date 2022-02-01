@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`readResponses 1`] = `
+Array [
+  Object {
+    "agentId": "d232840e-9252-482c-9dc4-3e824d9174af",
+    "parameters": Object {},
+    "request": "No",
+    "response": "Just wanted to check. I’m interested in buying the Hearts painting. Can you tell me more about it?",
+    "responseId": "49b7672d-62a8-4b98-8529-36f45289ae8d",
+    "sessionId": "231a7c-f0b-6dd-474-b15bfdcf4",
+    "timestamp": "2021-10-21T18:38:19.607825Z",
+  },
+  Object {
+    "agentId": "d232840e-9252-482c-9dc4-3e824d9174af",
+    "parameters": Object {},
+    "request": "It's cool",
+    "response": "What is your initial offer?",
+    "responseId": "3bc8b6cb-28f3-4f87-8f95-e7af744f9b48",
+    "sessionId": "231a7c-f0b-6dd-474-b15bfdcf4",
+    "timestamp": "2021-10-21T18:38:24.851268Z",
+  },
+  Object {
+    "agentId": "d232840e-9252-482c-9dc4-3e824d9174af",
+    "parameters": Object {
+      "offer1": "10000.0",
+    },
+    "request": "10000",
+    "response": "I’m afraid that is more than I expected to pay. Could you do $7,000? ",
+    "responseId": "5d4a2b9d-6990-4b32-9a92-158d5e045e2e",
+    "sessionId": "231a7c-f0b-6dd-474-b15bfdcf4",
+    "timestamp": "2021-10-21T18:38:28.267190Z",
+  },
+]
+`;

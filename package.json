@@ -1,0 +1,52 @@
+{
+  "name": "wharton_chat_bot",
+  "version": "0.1.0",
+  "description": "A automated confederate bot to participate in dialog based studies, backed by Dialogflow and embedded into Qualtrics.",
+  "main": "dist/index.js",
+  "author": "Ryan Hinkel <ryanhinkel@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest",
+    "dev": "concurrently \"yarn:watch:*\"",
+    "start": "functions-framework --source=dist --target=devIndex",
+    "lint": "bin/lint",
+    "format": "bin/format",
+    "deploy": "bin/deploy",
+    "clean": "rm -rf dist static/bundle.js",
+    "build": "bin/build",
+    "build:functions": "tsc",
+    "build:browser": "bin/build-browser",
+    "watch:functions": "tsc --watch",
+    "watch:browser": "bin/build-browser --watch",
+    "watch:server": "nodemon --watch dist --exec yarn start"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist"
+    ]
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^2.1.0",
+    "@types/express": "^4.17.12",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "concurrently": "^6.2.0",
+    "esbuild": "^0.14.11",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@google-cloud/dialogflow-cx": "^2.15.0",
+    "@google-cloud/logging": "^9.6.1",
+    "csv-stringify": "^5.6.5",
+    "dotenv": "^10.0.0",
+    "words-to-numbers": "^1.5.1"
+  }
+}

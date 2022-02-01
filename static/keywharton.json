@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "d3v-bigdata-projects",
+  "private_key_id": "4e4e82fae40f19941f9b65f70590dbae4031f0b8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCGUYQpoGu21rR6\nId3hWVOUaKCXnDdM4zq2sohs5zY8PyEKA/lPP54jFiELZQvbitvxHIA+DF3/ky6w\nya4hu8udd9+KivizLugCTuxpwooboQCKjG9laeP9OvZ7JlDHBm6efaxygn1+JvKZ\nCJOwYbOmZQmPawsLgehgTkxKzVg//AbzMbLxVZhyJT3AVqnG553zQoiFP3SGZRUS\niJLdOz1J/eICzJPjznmrt3LV2AB7FOBWnRW8LBpntNSX3TwClzKax1FPnppcLwKF\nKVmkpp3dGTClNEeNl24G1JpaXMokuND3JWNpHVi2mvl079PJmCNQ0fKgGSZ0gni3\njcSJIo3tAgMBAAECgf8bzsSN2ahzMgArSNemz9d94itdN/o68NA3Ar87zKJt1qQA\nbtIulf0nRm2Q7lqGGTlvsXbbYbQUNWR1NUvXsAl3kFm3VQ4oCo397FkFjEELd0ml\nZW2qkUGiK5Lb7BLNIYfFSD9rdZiFhYq0JBJvccq/qCtShdbDiyGQzqT814ZtuHLv\nZaPFqEYmrrQftdidOVMiWO0pzxk4RmZIUI8zMtsr1YHTbZjX8jUfiCtmHzYHu0Rc\nXDSPvQox+ZkWhPndwAA2cpMdStiRWpl+1uLVzr8Ykl9r972RL0I0w9xC4qWfQhCo\nNyxWMnd/ar2srbu9+HUnAP1geTE+XhXtHTsuP6ECgYEAutoZe1g+gT7FNN0ZH8bO\nmaRTddo7Dbn3sIIGNtfaZ4zDkYku+I3r5hOJsrz6uXydrbrAl+yxSsg1QGuEjo3p\n5AcWMvDLo1N7uo9tqqkFzoFeMwPjKqlvRsIIVCABiPY0L/ofhowjE523Kl2Db1fU\nlti+OflRaGQB1E4mI2jenEkCgYEAuAaEiOTwOe/2eOrmvZCqN7XznEbcfs90D8Ix\nApdz4nFxAAEseDZHw4/G5xKgXmkB1mOzHZXKBRNZ76SIq5fPwq6B2AiF34767Onz\nzYku5/mW6lc4LaDlX1gBFcx9glpy0bM2/AHUk9qosash+CXpOcMhhoK7VSrHgS56\nMJuIfIUCgYEAhqmos7xlT8BtYCv4b25Yd2J2w/kDlmDwocUTtXLbdMV+LOUxdPDT\nkn2CP87y47tr6EkvhE6Rd9PSjRrv7c1ZQ33YAd6I5KzF/y5fWx91j96shRfIIHb8\nO4KbfgWTFaJa+jjJf65/mSORXncGwrgJ/q02a5HDmfh5WQj5c4ug5AECgYASqK6F\nhtkIttkB16d/rwxjS7KgtNqkjPpSorj/b0XTvvbbLkNJCQ/rt0dOpKfYCsOh7kf6\nBvcN3rFux/sHkwQA1FrcAbk5OrEclnge7frwkHEJ38AVeEvph+3MPQi4z9z2gDpi\nAPmB6FjUcuql04o7Thq3HchK0WSbJ5BCH3MOVQKBgFdIJwbh9v39xNKRyY1IvVPD\nf7ubfr33CVwzBsPnraeEfQnhmW8D1DE3gMK+xSgzC9XSgOMxQUSmaUBWc1kKnPZv\nRX0TUZp1wszT+Weo9vUUFLVBZkaPWbOqonk7SRC6EfXpapyTda034TQugh/HI3u9\nDCCE6cwDPWL+9/vlitVA\n-----END PRIVATE KEY-----\n",
+  "client_email": "wharton-chatbot@d3v-bigdata-projects.iam.gserviceaccount.com",
+  "client_id": "114492821613562262337",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wharton-chatbot%40d3v-bigdata-projects.iam.gserviceaccount.com"
+}

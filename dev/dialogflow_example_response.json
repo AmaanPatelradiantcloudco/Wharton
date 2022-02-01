@@ -1,0 +1,66 @@
+{
+    "responseId": "c16cb486-fae7-48ef-bd33-372710a86bc5",
+    "queryResult": {
+        "responseMessages": [
+            {
+                "text": {
+                    "text": [
+                        "What can I do for you?"
+                    ],
+                    "allowPlaybackInterruption": false
+                },
+                "message": "text"
+            }
+        ],
+        "webhookPayloads": [],
+        "webhookStatuses": [],
+        "languageCode": "en",
+        "parameters": null,
+        "currentPage": {
+            "transitionRoutes": [],
+            "eventHandlers": [],
+            "transitionRouteGroups": [],
+            "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE",
+            "displayName": "Start Page",
+            "form": null,
+            "entryFulfillment": null
+        },
+        "intent": {
+            "trainingPhrases": [],
+            "parameters": [],
+            "labels": {},
+            "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/intents/00000000-0000-0000-0000-000000000000",
+            "displayName": "Default Welcome Intent",
+            "priority": 0,
+            "isFallback": false,
+            "description": ""
+        },
+        "intentDetectionConfidence": 1,
+        "diagnosticInfo": {}, /* To noisy to be included for now */
+        "match": {
+            "intent": {
+                "trainingPhrases": [],
+                "parameters": [],
+                "labels": {},
+                "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/intents/00000000-0000-0000-0000-000000000000",
+                "displayName": "Default Welcome Intent",
+                "priority": 0,
+                "isFallback": false,
+                "description": ""
+            },
+            "parameters": null,
+            "resolvedInput": "hi",
+            "matchType": "INTENT",
+            "confidence": 1,
+            "event": ""
+        },
+        "sentimentAnalysisResult": null,
+        "text": "hi",
+        "query": "text"
+    },
+    "outputAudio": {
+        "type": "Buffer",
+        "data": []
+    },
+    "outputAudioConfig": null
+}

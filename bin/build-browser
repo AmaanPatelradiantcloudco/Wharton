@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euo pipefail
+
+node_modules/.bin/esbuild src/browser/index.ts \
+  --outfile=static/bundle.js \
+  --bundle \
+  --minify \
+  --target=es2016 \
+  "$@"

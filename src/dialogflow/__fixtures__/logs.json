@@ -1,0 +1,127 @@
+[
+  {
+    "metadata": {
+      "timestamp": "2021-10-21T18:38:19.607825Z",
+      "labels": {
+        "agent_id": "d232840e-9252-482c-9dc4-3e824d9174af",
+        "session_id": "231a7c-f0b-6dd-474-b15bfdcf4"
+      }
+    },
+    "data": {
+      "responseId": "49b7672d-62a8-4b98-8529-36f45289ae8d",
+      "queryResult": {
+        "text": "No",
+        "intent": {
+          "displayName": "If they ask why I asked about robot",
+          "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/intents/2a608514-d697-4092-a28c-a5315f5d2804"
+        },
+        "currentPage": {
+          "displayName": "Information Exchange",
+          "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/flows/00000000-0000-0000-0000-000000000000/pages/1884e9b2-2a95-4fd2-a564-414b69d962b7"
+        },
+        "intentDetectionConfidence": 0.51311874,
+        "responseMessages": [
+          {
+            "text": {
+              "text": [
+                "Just wanted to check. I’m interested in buying the Hearts painting. Can you tell me more about it?"
+              ]
+            },
+            "responseType": "HANDLER_PROMPT",
+            "source": "VIRTUAL_AGENT"
+          }
+        ],
+        "match": {
+          "intent": {
+            "displayName": "If they ask why I asked about robot",
+            "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/intents/2a608514-d697-4092-a28c-a5315f5d2804"
+          },
+          "modelType": "MODEL_TYPE_STANDARD",
+          "resolvedInput": "No",
+          "confidence": 0.51311874,
+          "matchType": "INTENT"
+        }
+      },
+      "responseType": "FINAL"
+    }
+  },
+  {
+    "metadata": {
+      "timestamp": "2021-10-21T18:38:24.851268Z",
+      "labels": {
+        "session_id": "231a7c-f0b-6dd-474-b15bfdcf4",
+        "agent_id": "d232840e-9252-482c-9dc4-3e824d9174af"
+      }
+    },
+    "data": {
+      "responseType": "FINAL",
+      "responseId": "3bc8b6cb-28f3-4f87-8f95-e7af744f9b48",
+      "queryResult": {
+        "responseMessages": [
+          {
+            "source": "VIRTUAL_AGENT",
+            "text": {
+              "text": ["What is your initial offer?"]
+            },
+            "responseType": "PARAMETER_PROMPT"
+          }
+        ],
+        "text": "It's cool",
+        "currentPage": {
+          "displayName": "Bargaining",
+          "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/flows/00000000-0000-0000-0000-000000000000/pages/9d6e62bc-252b-4c97-9631-cd1086277a07"
+        },
+        "match": {
+          "confidence": 0.3,
+          "modelType": "MODEL_TYPE_STANDARD",
+          "matchType": "NO_MATCH"
+        },
+        "intentDetectionConfidence": 0.3
+      }
+    }
+  },
+  {
+    "metadata": {
+      "timestamp": "2021-10-21T18:38:28.267190Z",
+      "labels": {
+        "agent_id": "d232840e-9252-482c-9dc4-3e824d9174af",
+        "session_id": "231a7c-f0b-6dd-474-b15bfdcf4"
+      }
+    },
+    "data": {
+      "responseType": "FINAL",
+      "queryResult": {
+        "currentPage": {
+          "name": "projects/wharton-chatbot-test/locations/us-central1/agents/d232840e-9252-482c-9dc4-3e824d9174af/flows/00000000-0000-0000-0000-000000000000/pages/9d6e62bc-252b-4c97-9631-cd1086277a07",
+          "displayName": "Bargaining"
+        },
+        "intentDetectionConfidence": 1,
+        "parameters": {
+          "offer1": "10000.0"
+        },
+        "text": "10000",
+        "responseMessages": [
+          {
+            "text": {
+              "text": [
+                "I’m afraid that is more than I expected to pay. Could you do $7,000? "
+              ]
+            },
+            "source": "VIRTUAL_AGENT",
+            "responseType": "HANDLER_PROMPT"
+          }
+        ],
+        "match": {
+          "parameters": {
+            "offer1": "10000.0"
+          },
+          "modelType": "MODEL_TYPE_STANDARD",
+          "matchType": "PARAMETER_FILLING",
+          "resolvedInput": "10000",
+          "confidence": 1
+        }
+      },
+      "responseId": "5d4a2b9d-6990-4b32-9a92-158d5e045e2e"
+    }
+  }
+]
